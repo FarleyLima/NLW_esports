@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/Fundo.jpg");
+  background-position: top center;
+  background-size: 100% auto; /*100% a largura está 100% da largura disponivel da largura da tela e o auto e para a autura fica automatico*/
+  background-repeat: no-repeat; /*para não ficar repetindo a tela de fundo*/
+  background-color: #121214;
+}
+
+body * {
+  font-family: 'Inter', sans-serif;
+  line-height: 160%;
+}
+
+
+header  {
+  margin: auto;
+
+  margin-top: 32px;
+  margin-bottom: 8px;
+
+  width: 120px;
+  height: auto;
+
+  border-radius: 50%;
+
+  padding: 4px;
+
+  background-image: linear-gradient(0deg, #9572fc 0%, #43e7ad 50.52%, #e2d45c 100%);
+
+  display: flex;
+ 
+}
+
+/* essas animações foram feitas no final que as seções estavam todas feitas completamente*/
+
+header { /*efeito animação*/
+  animation: fromTop .3s .5s backwards;
+}
+
+@keyframes fromTop { /*efeito animação*/
+  from {
+    opacity: 0;
+    transform: translatey(-30px);
+  }
+}
+/*animações acima*/
+
+header:hover {
+  transform: rotate(360deg);
+  
+  transition: 2s; /*tempos da rotação*/
+}
+
+header img {
+  width: 100%;
+  
+  border-radius: 50%;
+}
+
+ul {
+  list-style: none;
+  gap: 16px;
+}
+
+
+main {
+  max-width: 580px;
+  width: 90%;
+  margin: auto;
+}
+
+section {
+  background-image: linear-gradient(90deg, #9572fc 0%, #43e7ad 50.52%, #e2d45c 100%);
+
+  padding-top: 4px;
+
+  border-radius: 10px;
+
+  margin-top: 24px;
+ 
+}
+ 
+/* essas animações foram feitas no final que as seções estavam todas feitas completamente*/
+main section {
+  animation: frombottom .7s backwards ;
+}
+
+main section:nth-child(1){
+  animation-delay: .8s;
+  
+}
+main section:nth-child(2){
+  animation-delay: 1.5s;
+  
+}
+main section:nth-child(3){
+  animation-delay: 2s;
+  
+}
+
+@keyframes frombottom {
+  from {
+    opacity: 0;
+    transform: translatex(30px);
+  }
+}
+/*animações acima*/
+
+section div {
+  border-radius: 8px;
+
+  padding: 24px 32px 32px 32px;
+
+  background-color: #2a2634;
+
+}
+
+section h1 {
+  color: #ffffff;
+
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: -0.47px;
+
+}
+
+section p {
+  color: #a1a1aa;
+
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: -0.18px;
+
+  margin-bottom: 24px;
+
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.games_list li img {
+  width: 90px;
+  height: 120px;
+
+  border-radius: 8px;
+
+  border: 1px solid #443e54;
+
+}
+
+.games_list li img:hover {
+  transform:scale(1.12) 
+
+}
+
+section ul li:hover {
+  transition: 2s; /*tempos da rotação*/
+}
+
+
+.channel_list li img {
+  width: 70px;
+  height: 70px;
+
+  border-radius: 50%;
+}
+
+.channel_list li img:hover {
+  transform:scale(1.12) 
+
+}
+
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.text {
+  display: flex;
+
+  align-items: center;
+  text-align: center;
+  justify-content: center;  
+}
+
+.text a {
+  font-size: 12px;
+  font-weight: normal;
+  color: #a1a1aa;
+
+  text-decoration: none;
+
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.text a:hover {
+  color: #9572fc;
+}
+
+.text h6 {
+  font-size: 12px;
+  font-weight: normal;
+  color: #a1a1aa;
+}
+
+/*
+animação 
+*/
+
+
+
